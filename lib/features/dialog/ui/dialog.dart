@@ -1,28 +1,20 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_dialog/flutter_custom_dialog.dart';
+import 'package:gg_game/theme/const.dart';
 
 abstract class Dialog {
-  void build(BuildContext context, Widget widget,
+  void buildDialog(BuildContext context, Widget widget,
       [bool barrierDismissible = false, Color barrierColor = Colors.black38]) {
-    final size = MediaQuery.of(context).size;
-    YYDialog().build(context)
-      ..barrierColor = barrierColor
-      ..width = size.width * 0.8
-      ..backgroundColor = Colors.transparent
-      ..barrierDismissible = barrierDismissible
-      ..animatedFunc = (child, animation) {
-        return ScaleTransition(
-          scale: Tween(begin: 0.0, end: 1.0).animate(
-            CurvedAnimation(
-              parent: animation,
-              curve: Curves.easeOutExpo,
-              reverseCurve: Curves.easeInExpo,
-            ),
-          ),
-          child: child,
-        );
-      }
-      ..widget(widget)
-      ..show();
+    AwesomeDialog(
+      dialogBorderRadius: borderRadius,
+      barrierColor: barrierColor,
+      dialogBackgroundColor: Colors.transparent,
+      context: context,
+      animType: AnimType.scale,
+      dialogType: DialogType.noHeader,
+      body: widget,
+      btnOkOnPress: null,
+      dismissOnTouchOutside: barrierDismissible,
+    ).show();
   }
 }

@@ -61,6 +61,6 @@ class DialogWin extends Dialog {
         ],
       ),
     );
-    build(context, widget);
+    buildDialog(context, widget);
   }
 }

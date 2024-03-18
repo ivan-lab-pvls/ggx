@@ -39,6 +39,6 @@ class DialogProfile extends Dialog {
         ],
       ),
     );
-    build(context, widget, true);
+    buildDialog(context, widget, true);
   }
 }

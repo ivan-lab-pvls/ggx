@@ -40,6 +40,6 @@ class DialogPause extends Dialog {
         ],
       ),
     );
-    build(context, widget, false, Colors.black87);
+    buildDialog(context, widget, false, Colors.black87);
   }
 }

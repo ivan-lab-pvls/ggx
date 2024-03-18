@@ -25,6 +25,6 @@ class DialogLose extends Dialog {
         ],
       ),
     );
-    build(context, widget);
+    buildDialog(context, widget);
   }
 }

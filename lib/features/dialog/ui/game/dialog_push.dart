@@ -18,6 +18,6 @@ class DialogPush extends Dialog {
         const DialogMenuButton(),
       ],
     ));
-    build(context, widget);
+    buildDialog(context, widget);
   }
 }

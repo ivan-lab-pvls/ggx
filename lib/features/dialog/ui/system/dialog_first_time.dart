@@ -46,6 +46,6 @@ With love, developer.
         ],
       ),
     );
-    build(context, widget, false, Colors.black87);
+    buildDialog(context, widget, false, Colors.black87);
   }
 }
