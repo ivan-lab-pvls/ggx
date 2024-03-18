@@ -1,0 +1,52 @@
+name: gg_game
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.2.4 <4.0.0"
+
+dependencies:
+  after_layout: ^1.2.0
+  auto_route: ^7.9.0
+  auto_route_generator: ^7.3.2
+  bloc: ^8.1.3
+  build_runner: ^2.4.8
+  dotted_border: ^2.1.0
+  firebase_core: ^2.27.0
+  firebase_remote_config: ^4.3.17
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.0
+  flutter_bloc: ^8.1.4
+  firebase_messaging: ^14.2.2
+  flutter_custom_dialog: ^1.3.0
+  flutter_inappwebview: ^6.0.0
+  flutter_native_splash: ^2.3.10
+  flutter_screenutil: ^5.9.0
+  flutter_shake_animated: ^0.0.5
+  overlay_support: ^2.1.0
+  flutter_svg: ^2.0.10+1
+  get_it: ^7.6.7
+  flutter_local_notifications: ^9.8.0+1
+  intl: ^0.19.0
+  kbspinningwheel: ^1.0.3
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/chips/
+    - assets/icons/
+    - assets/main/
+    - assets/cards/
+    - assets/reward/
+    - assets/
+
+flutter_native_splash:
+  background_image: "assets/splash.png"
